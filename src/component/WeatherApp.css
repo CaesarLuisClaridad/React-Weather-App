@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');    
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff7f7;
+}
+
+.box-container{
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    max-width: 400px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    background: #9587d4;
+    padding: 10px 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.weather-info{
+    padding: 20px;
+    width: 100%;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    
+}
+
+.head input{
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.head .search-img{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    margin: 10px;
+}
+
+.Error{
+    color: rgb(124, 12, 59);
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.Date_Time{
+    text-align: center;
+    margin: 12px;
+    color: #fff;
+}
+
+
+.body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weather-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.weather-img img{
+    width: 60%;
+}
+
+.weather{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    gap: 1rem;
+}
+
+.weather .degree{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    border-right: 2px solid #fff;
+    padding-right: 10px;
+    color: #fff;
+}
+
+.weather .location{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+
+.footer .element{
+    flex-basis: 50%;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.element .element-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.element-data img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 400px){
+    .box-container{
+        width: 90%;
+        height: 85%;
+        padding: 10px 10px;
+    }
+
+    .weather-info{
+        padding: 15px;
+    }
+
+    .Date_Time{
+        margin: 13px;
+        font-size: 0.9rem;
+    }
+
+    .weather .degree{
+        font-size: 1.7rem;
+    }
+    
+    .weather .location{
+        font-size: 1.1rem;
+    }
+
+    .footer .element{
+        margin-top: 15px;
+    }
+    
+    .element .element-data{
+        font-size: 0.9rem;
+    }
+
+    .element .element-data p{
+        font-weight: 600;
+    }
+    
+    .element-data img{
+        width: 40px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 300px){
+    .box-container{
+        width: 90%;
+        height: 80%;
+        padding: 5px;
+    }
+
+    .head input{
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .head .search-img img{
+        width: 15px;
+    }
+    
+    .Error{
+       font-size: 12px;
+    }
+
+    .Date_Time{
+        margin: 13px;
+        font-size: 12px;
+    }
+
+    .weather-info{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .weather{
+        margin-top: 20px;
+    }
+    .weather-img img{
+        width: 90%;
+    }
+
+    .weather .degree{
+        font-size: 1rem;
+    }
+    
+    .weather .location{
+        font-size: 0.7rem;
+    }
+
+    .footer .element{
+        margin-top: 15px;
+    }
+    
+    .element .element-data{
+        font-size: 0.7rem;
+    }
+
+    .element .element-data p{
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+    
+    .element-data img{
+        width: 30px;
+        margin-right: 10px;
+    }
+
+}
+
